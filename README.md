@@ -13,3 +13,15 @@ project is to develop a GAN (AC-GAN) to generate both Covid and healthy X-ray im
 ## Common questions
 - **Why not using data augmentations based on image manipulations (geometric/photometric)?** This type of transformations cannot be done without clinical considerations otherwise it will perform poorly on validation.
 - **Why using an AC-GAN?** We have also tested a DC-GAN and compared the results. However, the AC-GAN allows to generate X-rays of multiple classes (covid, pneumonia ...)
+
+
+
+
+# Training
+---------------------------------
+Training the GAN is done by executing:
+
+```
+$ python src/models/train.py -d [path-to-data] -z [latent-dimension] -s [save-model-every]
+```
+The training will save the models every -s epoch into saved_models/ folder and the generated training images in saved_images/ folder
