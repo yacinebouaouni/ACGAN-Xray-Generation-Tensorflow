@@ -35,3 +35,12 @@ Generating dataset is done by executing:
 $ python src/models/generate.py -m [path-to-model] -c [Nb covid images] -n [Nb non-covid images]
 ```
 The generated images will be saved in CovidCXR/ and NonCovidCXR/
+
+# Evaluation FID score:
+----------------------------
+The frechet-inception distance is a metric for quantifying the distance between two distributions of images. A small FID means that the two datasets come from nearly similar distributions.
+Computing the FID is done by executing:
+```
+$ python src/evaluation/eval_fid.py -r [path-to-real-dataset] -g [path-to-generated-dataset] -b [batch-size]
+```
+

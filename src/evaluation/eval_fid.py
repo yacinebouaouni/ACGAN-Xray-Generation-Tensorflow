@@ -8,7 +8,7 @@ import argparse
 def main():
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("-o", "--real", type=str, required=True, help="path to real dataset")
+    parser.add_argument("-r", "--real", type=str, required=True, help="path to real dataset")
     parser.add_argument("-g", "--generated", type=str, required=True, help="path to generated dataset")
     parser.add_argument("-b", "--batch", type=int, required=True, help="batch size")
     args = parser.parse_args()
