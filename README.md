@@ -24,4 +24,14 @@ Training the GAN is done by executing:
 ```
 $ python src/models/train.py -d [path-to-data] -z [latent-dimension] -s [save-model-every]
 ```
-The training will save the models every -s epoch into saved_models/ folder and the generated training images in saved_images/ folder
+The training will save the models every -s epoch into saved_models/ folder and the generated training images in saved_images/ folder.
+
+
+
+# Generate dataset:
+------------------------
+Generating dataset is done by executing:
+```
+$ python src/models/generate.py -m [path-to-model] -c [Nb covid images] -n [Nb non-covid images]
+```
+The generated images will be saved in CovidCXR/ and NonCovidCXR/
