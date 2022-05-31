@@ -44,3 +44,7 @@ Computing the FID is done by executing:
 $ python src/evaluation/eval_fid.py -r [path-to-real-dataset] -g [path-to-generated-dataset] -b [batch-size]
 ```
 
+# Sample of generated data:
+<p align="center">
+  <img width="250" height="250" src="reports/figures/generated.jpeg">
+</p>
