@@ -1,4 +1,4 @@
-from models.model2 import ACGAN
+from src.models.model2 import ACGAN
 import argparse
 
 
